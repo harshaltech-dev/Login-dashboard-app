@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Main Container */
+.dashboard-container {
+  margin-left: 250px;
+  min-height: 100vh;
+  padding: 25px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 250px;
+  height: 100vh;
+
+  background: #0f172a;
+  color: white;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.open {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar h1 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 35px;
+
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+/* Sidebar Buttons */
+.btn {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+.Home-btn{
+  background: #a634d7;
+  color: rgb(208, 205, 212);
+
+}
+.Home-btn:hover{
+  background: #952bbb;
+  transform: translateY(-2px);
+}
+
+.emp-btn{
+  background: #a0da18;
+  color: white;
+}
+.emp-btn:hover{
+   background: #66c72a;
+  transform: translateY(-2px);
+}
+.product-btn{
+  background: #46cff1;
+  color: white;
+}
+.product-btn:hover{
+   background: #4ebad6;
+  transform: translateY(-2px);
+}
+.update-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.update-btn:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  margin-top: 25px;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* Main Card */
+.dashboard-card {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Header */
+.header {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border-radius: 15px;
+
+  margin-bottom: 30px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  color: #1e293b;
+  font-size: 24px;
+  background: none;
+}
+
+/* Header Button */
+.header-btn {
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+  );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.header-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px
+    rgba(37, 99, 235, 0.3);
+}
+
+/* Welcome Section */
+.dashboard-card h1 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.dashboard-card h3 {
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  margin-bottom: 15px;
+
+  color: #334155;
+
+  box-shadow: 0 4px 10px
+    rgba(0, 0, 0, 0.08);
+}
+.dark {
+  background: #1e293b;
+  color: white;
+}
+
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: white;
+}
+.dark .header {
+  background: #0f172a;
+}
+
+.dark .header h2 {
+  color: white;
+}
+.dark h3 {
+  background: #334155;
+  color: white;
+}
